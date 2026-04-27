@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="GestionProductos.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<GestionProductos>
+    <categoria id="00001">
+        <nombre>Alimentos</nombre>
+        <productos>
+            <producto id="10001">
+                <descripcion>agua</descripcion>
+                <precio>200.00</precio>
+                <stock>20</stock>
+                <ano>2026</ano>
+            </producto>
+            <producto id="10002">
+                <descripcion>pan</descripcion>
+                <precio>150.00</precio>
+                <stock>25</stock>
+                <ano>2026</ano>
+            </producto>
+        </productos>
+    </categoria>
+    
+    <categoria id="00002">
+        <nombre>Bazar</nombre>
+        <productos>
+            <producto id="20001">
+                <descripcion>botella</descripcion>
+                <precio>150.00</precio>
+                <stock>30</stock>
+                <ano>2025</ano>
+            </producto>
+        </productos>
+    </categoria>
+</GestionProductos>
+ 

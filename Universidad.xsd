@@ -1,0 +1,61 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="universidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="pais" type="xs:string"/>
+        <xs:element name="localidad" type="xs:string"/>
+        <xs:element name="sitioWeb" type="xs:string"/>
+        
+        <xs:element name="carreras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="carrera" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="duracion" type="xs:string"/>
+                    <xs:element name="hsTotales" type="xs:integer"/>
+                    <xs:element name="materias">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="materia" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="nombre" type="xs:string"/>
+                                <xs:element name="anioCarrera" type="xs:integer"/>
+                                <xs:element name="cuatrimestre" type="xs:string"/>
+                                <xs:element name="hsTeoricas" type="xs:integer"/>
+                                <xs:element name="hsPracticas" type="xs:integer"/>
+                              </xs:sequence>
+                              <xs:attribute name="id">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9]{4}"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="codCarrera" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="[0-9]{3}"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

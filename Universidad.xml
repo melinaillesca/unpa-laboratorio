@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Universidad>
+    <nombre>UNPA UARG</nombre>
+    <pais>Argentina</pais>
+    <localidad>Río Gallegos</localidad>
+    <sitioWeb>www.uarg.unpa.edu.ar</sitioWeb>
+
+    <carreras>
+        <carrera id="101"> <nombre>Analista en Sistemas</nombre>
+            <duracion>3 años</duracion>
+            <hsTotales>2500</hsTotales>
+            <materias>
+                <materia id="1001" codCarrera="101"> <nombre>Laboratorio de Programación</nombre>
+                    <anioCarrera>2</anioCarrera>
+                    <cuatrimestre>Anual</cuatrimestre>
+                    <hsTeoricas>4</hsTeoricas>
+                    <hsPracticas>4</hsPracticas>
+                </materia>
+            </materias>
+        </carrera>
+    </carreras>
+
+    <alumnos>
+        <alumno id="50001"> <apellido>Gomez</apellido>
+            <nombre>Juan</nombre>
+            <sexo>Masculino</sexo>
+            <estudios codCarrera="101"/>
+            <asignaturasInscriptas codMateria="1001"/>
+        </alumno>
+    </alumnos>
+</Universidad>
